@@ -2,9 +2,7 @@ module.exports = function (grunt) {
   require('load-grunt-tasks')(grunt)
 
   // node-glob syntax
-  const includeAllSassFiles = [
-    './styles/*.scss',
-  ]
+  const includeAllSassFiles = ['./styles/*.scss']
 
   // sass files path (destination: source)
   const sassPath = {
