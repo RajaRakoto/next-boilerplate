@@ -1,3 +1,7 @@
+/*
+NOTE: replace xdg-open to start on windows
+*/
+
 module.exports = function (grunt) {
   require('load-grunt-tasks')(grunt)
 
@@ -37,63 +41,63 @@ module.exports = function (grunt) {
           'cd ./node_modules/@raja_rakoto/sass-eo/',
           'sassdoc .',
           'cd sassdoc',
-          'xdg-open index.html',
+          'start index.html',
         ].join('&&'),
       },
       loaders_docs: {
         command: [
           'cd ./node_modules/@raja_rakoto/sass-eo/',
           'cd docs/loaders',
-          'xdg-open index.html',
+          'start index.html',
         ].join('&&'),
       },
       magic_docs: {
         command: [
           'cd ./node_modules/@raja_rakoto/sass-eo/',
           'cd docs/magic',
-          'xdg-open index.html',
+          'start index.html',
         ].join('&&'),
       },
       milligrid_docs: {
         command: [
           'cd ./node_modules/@raja_rakoto/sass-eo/',
           'cd docs/milligrid',
-          'xdg-open index.html',
+          'start index.html',
         ].join('&&'),
       },
       hamburgers_config: {
         command: [
           'cd ./node_modules/@raja_rakoto/sass-eo/',
           'cd modules/libs',
-          'xdg-open _hamburgers.scss',
+          'start _hamburgers.scss',
         ].join('&&'),
       },
       grid_maker: {
         command: [
           'cd ./node_modules/@raja_rakoto/sass-eo/',
           'cd modules/apps/grid-maker',
-          'xdg-open index.html',
+          'start index.html',
         ].join('&&'),
       },
       flexbox_maker: {
         command: [
           'cd ./node_modules/@raja_rakoto/sass-eo/',
           'cd modules/apps/flexbox-maker',
-          'xdg-open index.html',
+          'start index.html',
         ].join('&&'),
       },
       buttons_maker: {
         command: [
           'cd ./node_modules/@raja_rakoto/sass-eo/',
           'cd modules/apps/',
-          'xdg-open btn-maker.html',
+          'start btn-maker.html',
         ].join('&&'),
       },
       boxshadow_maker: {
         command: [
           'cd ./node_modules/@raja_rakoto/sass-eo/',
           'cd modules/apps/',
-          'xdg-open box-shadow-maker.html',
+          'start box-shadow-maker.html',
         ].join('&&'),
       },
     },
