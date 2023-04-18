@@ -16,7 +16,9 @@ module.exports = {
   },
   plugins: ['@typescript-eslint', 'prettier'],
   rules: {
+    semi: ['error', 'always'],
     'prettier/prettier': ['error', { endOfLine: 'auto' }],
     '@typescript-eslint/no-empty-interface': 'off',
+    'no-extra-semi': 'off',
   },
-}
+};
