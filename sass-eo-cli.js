@@ -3,16 +3,19 @@ NOTE: replace xdg-open to start on windows
 */
 
 module.exports = function (grunt) {
-  require('load-grunt-tasks')(grunt)
+  require('load-grunt-tasks')(grunt);
 
   // node-glob syntax
-  const includeAllSassFiles = ['.src/styles/*.scss', '.src/components/**/*.scss']
+  const includeAllSassFiles = [
+    '.src/styles/*.scss',
+    '.src/components/**/*.scss',
+  ];
 
   // sass files path (destination: source)
   const sassPath = {
     '.src/styles/globals.css': '.src/styles/globals.scss',
     '.src/styles/home.module.css': '.src/styles/home.module.scss',
-  }
+  };
 
   grunt.initConfig({
     pkg: grunt.file.readJSON('./package.json'),
@@ -101,22 +104,22 @@ module.exports = function (grunt) {
         ].join('&&'),
       },
     },
-  })
+  });
 
   // watch
-  grunt.registerTask('watch-sass', ['watch:sass'])
+  grunt.registerTask('watch-sass', ['watch:sass']);
   // docs
-  grunt.registerTask('sseo-docs', ['shell:sseo_docs'])
-  grunt.registerTask('loaders-docs', ['shell:loaders_docs'])
-  grunt.registerTask('magic-docs', ['shell:magic_docs'])
-  grunt.registerTask('milligrid-docs', ['shell:milligrid_docs'])
+  grunt.registerTask('sseo-docs', ['shell:sseo_docs']);
+  grunt.registerTask('loaders-docs', ['shell:loaders_docs']);
+  grunt.registerTask('magic-docs', ['shell:magic_docs']);
+  grunt.registerTask('milligrid-docs', ['shell:milligrid_docs']);
   // config
-  grunt.registerTask('hamburgers-config', ['shell:hamburgers_config'])
+  grunt.registerTask('hamburgers-config', ['shell:hamburgers_config']);
   //maker
-  grunt.registerTask('grid-maker', ['shell:grid_maker'])
-  grunt.registerTask('flexbox-maker', ['shell:flexbox_maker'])
-  grunt.registerTask('buttons-maker', ['shell:buttons_maker'])
-  grunt.registerTask('boxshadow-maker', ['shell:boxshadow_maker'])
+  grunt.registerTask('grid-maker', ['shell:grid_maker']);
+  grunt.registerTask('flexbox-maker', ['shell:flexbox_maker']);
+  grunt.registerTask('buttons-maker', ['shell:buttons_maker']);
+  grunt.registerTask('boxshadow-maker', ['shell:boxshadow_maker']);
 
   // all tasks lists
   const sasseoCommandList = [
@@ -130,7 +133,7 @@ module.exports = function (grunt) {
     'flexbox-maker',
     'buttons-maker',
     'boxshadow-maker',
-  ]
+  ];
   const sasseoCommandStatus = [
     'watch all .scss files',
     'generate sassdoc for basics modules',
@@ -142,13 +145,13 @@ module.exports = function (grunt) {
     'open flexbox maker app',
     'open buttons maker app',
     'open box shadow maker app',
-  ]
+  ];
 
   // default tasks
   grunt.registerTask('default', () => {
     console.log(
       '\nHere are the lists of executable commands with sass-eo-cli:'.green,
-    )
+    );
 
     /**
      *
@@ -160,33 +163,33 @@ module.exports = function (grunt) {
     function getTaskResume(taskTitle, taskNames, taskStatus, taskTheme) {
       switch (taskTheme) {
         case 'cyan':
-          console.log(`\n${taskTitle}`.cyan.inverse.bold)
+          console.log(`\n${taskTitle}`.cyan.inverse.bold);
           taskNames.forEach((taskNames, index) => {
-            console.log(taskNames.cyan + ` -> ${taskStatus[index]}`)
-          })
-          break
+            console.log(taskNames.cyan + ` -> ${taskStatus[index]}`);
+          });
+          break;
         case 'magenta':
-          console.log(`\n${taskTitle}`.magenta.inverse.bold)
+          console.log(`\n${taskTitle}`.magenta.inverse.bold);
           taskNames.forEach((taskNames, index) => {
-            console.log(taskNames.magenta + ` -> ${taskStatus[index]}`)
-          })
-          break
+            console.log(taskNames.magenta + ` -> ${taskStatus[index]}`);
+          });
+          break;
         case 'yellow':
-          console.log(`\n${taskTitle}`.yellow.inverse.bold)
+          console.log(`\n${taskTitle}`.yellow.inverse.bold);
           taskNames.forEach((taskNames, index) => {
-            console.log(taskNames.yellow + ` -> ${taskStatus[index]}`)
-          })
-          break
+            console.log(taskNames.yellow + ` -> ${taskStatus[index]}`);
+          });
+          break;
         case 'blue':
-          console.log(`\n${taskTitle}`.blue.inverse.bold)
+          console.log(`\n${taskTitle}`.blue.inverse.bold);
           taskNames.forEach((taskNames, index) => {
-            console.log(taskNames.blue + ` -> ${taskStatus[index]}`)
-          })
-          break
+            console.log(taskNames.blue + ` -> ${taskStatus[index]}`);
+          });
+          break;
 
         default:
-          null
-          break
+          null;
+          break;
       }
     }
 
@@ -196,6 +199,6 @@ module.exports = function (grunt) {
       sasseoCommandList,
       sasseoCommandStatus,
       'magenta',
-    )
-  })
-}
+    );
+  });
+};

@@ -1,1 +1,1 @@
-declare module 'axios-mock-adapter'
+declare module 'axios-mock-adapter';
