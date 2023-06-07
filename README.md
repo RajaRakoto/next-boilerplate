@@ -14,8 +14,8 @@ Ce starter est conçu pour vous aider à démarrer votre projet Next.js plus rap
 
 <br>
 
-**📌 Yarn**
-J'utilise Yarn plutôt que NPM dans ce starter pour ses fonctionnalités supplémentaires, sa vitesse accrue et sa gestion des dépendances plus précise.
+**📌 PNPM**
+PNPM est un gestionnaire de paquets pour les projets JavaScript. Il fonctionne de manière similaire à npm (Node Package Manager) et Yarn, mais il présente quelques différences clés. PNPM utilise un mécanisme de stockage partagé pour les dépendances, ce qui signifie qu'il économise de l'espace disque en évitant de dupliquer les modules dans chaque projet. Au lieu de cela, les modules sont liés de manière symbolique ou copiés dans un emplacement centralisé. Cela peut améliorer considérablement les performances d'installation et d'exécution des dépendances. PNPM est compatible avec le format de fichier package.json standard et prend en charge diverses fonctionnalités telles que la gestion des versions, les scripts personnalisés et la résolution des dépendances.
 
 **📌 Webpack**
 Un build tool qui permet de transformer votre code en fichiers statiques. Il est souvent utilisé pour la gestion des assets, le transpilage du code (ES6, TypeScript, etc.), la gestion des modules, et bien d'autres choses.
@@ -58,7 +58,7 @@ Personnalisez votre site Web plus rapidement avec SASS-EO, un ensemble d'outils 
 
 Ce starter contient des scripts NPM préconfigurés pour faciliter les tâches répétitives (Je ne montre ici que les scripts les plus utilisés dans ce starter mais vous pouvez voir tous les scripts dans le fichier package.json):
 
-<li><code>dev</code>: démarre le serveur de développement Next.js avec hot reloading</li><li><code>build</code>: compile et construit le projet Next.js pour la production</li><li><code>test</code>: exécute les tests Jest pour votre projet</li><li><code>eslint</code>: exécute ESLint sur votre code Javascript/Typescript</li><li><code>format-check</code>: vérifie les codes non formatés avec Prettier</li><li><code>format-fix</code>: applique Prettier à votre code pour le formater</li><li><code>sseo-watch</code>: execute le mode watching du package sass-eo</li><li><code>sseo-docs</code>: visite rapide de la documentation de sass-eo avec sassdoc</li>
+<li><code>dev</code>: démarre le serveur de développement Next.js avec hot reloading</li><li><code>build</code>: compile et construit le projet Next.js pour la production</li><li><code>test</code>: exécute les tests Jest pour votre projet</li><li><code>eslint</code>: exécute ESLint sur votre code Javascript/Typescript</li><li><code>pkg-check</code>: facilite la vérification des mises à jour et des dépendances obsolètes dans un projet npm</li><li><code>pkg-check</code>: mettre a jour interactivement les dépendances obsolètes dans un projet npm</li><li><code>format-check</code>: vérifie les codes non formatés avec Prettier</li><li><code>format-fix</code>: applique Prettier à votre code pour le formater</li><li><code>sseo-watch</code>: execute le mode watching du package sass-eo</li><li><code>sseo-docs</code>: visite rapide de la documentation de sass-eo avec sassdoc</li>
 
 ---
 
