@@ -6,12 +6,12 @@ module.exports = function (grunt) {
   require('load-grunt-tasks')(grunt)
 
   // node-glob syntax
-  const includeAllSassFiles = ['./styles/*.scss', './components/**/*.scss']
+  const includeAllSassFiles = ['.src/styles/*.scss', '.src/components/**/*.scss']
 
   // sass files path (destination: source)
   const sassPath = {
-    './styles/globals.css': './styles/globals.scss',
-    './styles/home.module.css': './styles/home.module.scss',
+    '.src/styles/globals.css': '.src/styles/globals.scss',
+    '.src/styles/home.module.css': '.src/styles/home.module.scss',
   }
 
   grunt.initConfig({
@@ -41,63 +41,63 @@ module.exports = function (grunt) {
           'cd ./node_modules/@raja_rakoto/sass-eo/',
           'sassdoc .',
           'cd sassdoc',
-          'start index.html',
+          'xdg-open index.html',
         ].join('&&'),
       },
       loaders_docs: {
         command: [
           'cd ./node_modules/@raja_rakoto/sass-eo/',
           'cd docs/loaders',
-          'start index.html',
+          'xdg-open index.html',
         ].join('&&'),
       },
       magic_docs: {
         command: [
           'cd ./node_modules/@raja_rakoto/sass-eo/',
           'cd docs/magic',
-          'start index.html',
+          'xdg-open index.html',
         ].join('&&'),
       },
       milligrid_docs: {
         command: [
           'cd ./node_modules/@raja_rakoto/sass-eo/',
           'cd docs/milligrid',
-          'start index.html',
+          'xdg-open index.html',
         ].join('&&'),
       },
       hamburgers_config: {
         command: [
           'cd ./node_modules/@raja_rakoto/sass-eo/',
           'cd modules/libs',
-          'start _hamburgers.scss',
+          'xdg-open _hamburgers.scss',
         ].join('&&'),
       },
       grid_maker: {
         command: [
           'cd ./node_modules/@raja_rakoto/sass-eo/',
           'cd modules/apps/grid-maker',
-          'start index.html',
+          'xdg-open index.html',
         ].join('&&'),
       },
       flexbox_maker: {
         command: [
           'cd ./node_modules/@raja_rakoto/sass-eo/',
           'cd modules/apps/flexbox-maker',
-          'start index.html',
+          'xdg-open index.html',
         ].join('&&'),
       },
       buttons_maker: {
         command: [
           'cd ./node_modules/@raja_rakoto/sass-eo/',
           'cd modules/apps/',
-          'start btn-maker.html',
+          'xdg-open btn-maker.html',
         ].join('&&'),
       },
       boxshadow_maker: {
         command: [
           'cd ./node_modules/@raja_rakoto/sass-eo/',
           'cd modules/apps/',
-          'start box-shadow-maker.html',
+          'xdg-open box-shadow-maker.html',
         ].join('&&'),
       },
     },
