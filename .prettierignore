@@ -1,13 +1,19 @@
 # dependencies
 node_modules
+pnpm-lock.yaml
+
+# testing
+coverage
 
 # next.js
 .next
 
 # production
 build
-dist
 out
+dist
+dist-ssr
+*.local
 
 # local env files
 .env*.local
