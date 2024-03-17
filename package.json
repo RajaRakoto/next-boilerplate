@@ -4,7 +4,6 @@
   "description": "Minimalistic boilerplate to quick-start Next.js development in TypeScript, optimized for blazing-fast performance with Bun 🚀",
   "author": "Raja Rakotonirina <raja.rakoto7@gmail.com>",
   "license": "MIT",
-  "type": "module",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/RajaRakoto/next-boilerplate.git"

@@ -9,7 +9,7 @@
     "sourceType": "module",
     "ecmaVersion": "latest"
   },
-  "plugins": ["@typescript-eslint", "jest", "react-refresh"],
+  "plugins": ["@typescript-eslint", "jest"],
   "extends": [
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
