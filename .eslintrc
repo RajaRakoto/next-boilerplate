@@ -11,22 +11,23 @@
   },
   "plugins": ["@typescript-eslint", "jest"],
   "extends": [
+    "next",
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
     "plugin:jest/recommended",
     "next/core-web-vitals",
     "prettier"
   ],
+  "globals": {
+    "React": "readonly"
+  },
   "overrides": [
     {
       "files": ["*.{js,cjs,mjs,ts,mts,jsx,tsx}"]
     }
   ],
   "rules": {
-    "@typescript-eslint/explicit-function-return-type": "warn",
-    "react-refresh/only-export-components": [
-      "warn",
-      { "allowConstantExport": true }
-    ]
+    "no-unused-vars": "warn",
+    "@typescript-eslint/explicit-function-return-type": "warn"
   }
 }
