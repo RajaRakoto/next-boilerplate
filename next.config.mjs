@@ -1,9 +1,9 @@
 /** @type {import('next').NextConfig} */
+
 const nextConfig = {
 	eslint: {
-		dirs: ['src'],
+		dirs: ["src"],
 	},
-
 	reactStrictMode: true,
 	swcMinify: true,
 
@@ -16,8 +16,8 @@ const nextConfig = {
 
 	webpack(config) {
 		// Grab the existing rule that handles SVG imports
-		const fileLoaderRule = config.module.rules.find(rule =>
-			rule.test?.test?.('.svg'),
+		const fileLoaderRule = config.module.rules.find((rule) =>
+			rule.test?.test?.(".svg"),
 		);
 
 		config.module.rules.push(
@@ -32,7 +32,7 @@ const nextConfig = {
 				test: /\.svg$/i,
 				issuer: { not: /\.(css|scss|sass)$/ },
 				resourceQuery: { not: /url/ }, // exclude if *.svg?url
-				loader: '@svgr/webpack',
+				loader: "@svgr/webpack",
 				options: {
 					dimensions: false,
 					titleProp: true,
