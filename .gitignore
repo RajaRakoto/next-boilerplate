@@ -73,7 +73,6 @@ typings
 
 # dotenv environment variables file
 .env
-.env.test
 
 # output
 *.tgz
