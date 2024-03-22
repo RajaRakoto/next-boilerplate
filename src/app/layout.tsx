@@ -6,6 +6,7 @@ import { T_FunctionComponent } from "@/@types";
 
 /* styles */
 import "@/styles/tailwind.scss";
+import "@/styles/index.scss";
 
 // =======================================
 
