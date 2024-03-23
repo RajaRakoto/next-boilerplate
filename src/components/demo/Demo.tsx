@@ -5,9 +5,7 @@ import Link from "next/link";
 import { useState, useEffect } from "react";
 
 /* assets */
-import turbopackLogo from "~/images/turbopack.svg";
-import nextLogo from "~/images/next.svg";
-import bunLogo from "~/images/bun.svg";
+import { turbopackLogo, nextLogo, bunLogo } from "@/constants";
 
 /* store - redux */
 import { useStoreDispatch, useStoreSelector } from "@/hooks/redux";
@@ -81,6 +79,8 @@ export default function Demo(): T_FunctionComponent {
 						className="logo turbopack"
 						src={turbopackLogo}
 						alt="Turbopack Logo"
+						width={200}
+						height={200}
 						priority
 					/>
 				</Link>
@@ -93,6 +93,8 @@ export default function Demo(): T_FunctionComponent {
 						className="logo next dark:invert"
 						src={nextLogo}
 						alt="Next.js Logo"
+						width={200}
+						height={200}
 						priority
 					/>
 				</Link>
@@ -101,6 +103,8 @@ export default function Demo(): T_FunctionComponent {
 						className="logo bun"
 						src={bunLogo}
 						alt="Bun.js Logo"
+						width={200}
+						height={200}
 						priority
 					/>
 				</Link>
