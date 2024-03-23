@@ -1,6 +1,6 @@
 {
 	"name": "next-boilerplate",
-	"version": "0.1.0",
+	"version": "1.0.0",
 	"description": "Minimalistic boilerplate to quick-start Next.js development in TypeScript, optimized for blazing-fast performance with Bun & Turbopack 🚀",
 	"author": "Raja Rakotonirina <raja.rakoto7@gmail.com>",
 	"license": "MIT",
