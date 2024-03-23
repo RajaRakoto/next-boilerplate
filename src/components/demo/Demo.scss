@@ -25,30 +25,30 @@
 			filter: drop-shadow(0 0 2em #fbd461aa);
 		}
 	}
-}
 
-.cards {
-	display: flex;
-	flex-direction: column;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-items: center;
-	gap: 1rem;
-	padding: 2rem;
+	.cards {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		gap: 1rem;
+		padding: 2rem;
 
-	.card {
-		padding: 15px;
-		border: #eee 1px solid;
-		border-radius: 7px;
-		background-color: #bdbdbd77;
+		.card {
+			padding: 15px;
+			border: #eee 1px solid;
+			border-radius: 7px;
+			background-color: #bdbdbd77;
 
-		button {
-			margin: 10px;
-			background-color: #ffffff;
+			button {
+				margin: 10px;
+				background-color: #ffffff;
+			}
 		}
 	}
-}
 
-.read-the-docs {
-	color: #888;
+	.read-the-docs {
+		color: #888;
+	}
 }

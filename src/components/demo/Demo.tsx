@@ -5,9 +5,9 @@ import Link from "next/link";
 import { useState, useEffect } from "react";
 
 /* assets */
-import turbopackLogo from "~/icons/turbopack.svg";
-import nextLogo from "~/icons/next.svg";
-import bunLogo from "~/icons/bun.svg";
+import turbopackLogo from "~/images/turbopack.svg";
+import nextLogo from "~/images/next.svg";
+import bunLogo from "~/images/bun.svg";
 
 /* store - redux */
 import { useStoreDispatch, useStoreSelector } from "@/hooks/redux";
@@ -72,7 +72,11 @@ export default function Demo(): T_FunctionComponent {
 	return (
 		<div id="demo">
 			<div className="flex flex-row flex-wrap gap-5 justify-center items-center">
-				<Link href="https://turbo.build/pack">
+				<Link
+					href="https://turbo.build/pack"
+					target="_blank"
+					rel="noopener noreferrer"
+				>
 					<Image
 						className="logo turbopack"
 						src={turbopackLogo}
@@ -80,15 +84,19 @@ export default function Demo(): T_FunctionComponent {
 						priority
 					/>
 				</Link>
-				<Link href="https://nextjs.org/">
+				<Link
+					href="https://nextjs.org/"
+					target="_blank"
+					rel="noopener noreferrer"
+				>
 					<Image
-						className="logo next"
+						className="logo next dark:invert"
 						src={nextLogo}
 						alt="Next.js Logo"
 						priority
 					/>
 				</Link>
-				<Link href="https://bun.sh/">
+				<Link href="https://bun.sh/" target="_blank" rel="noopener noreferrer">
 					<Image
 						className="logo bun"
 						src={bunLogo}
