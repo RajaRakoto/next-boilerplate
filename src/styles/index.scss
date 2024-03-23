@@ -1,9 +1,5 @@
 @charset "UTF-8";
 
-$button-background-dark: #1a1a1a;
-$button-background-light: #f9f9f9;
-$button-border-color: #646cff;
-
 :root {
 	--foreground-rgb: 0, 0, 0;
 	--background-start-rgb: 214, 219, 220;
@@ -34,7 +30,7 @@ h1 {
 }
 
 h3 {
-	font-size: 2.2em;
+	font-size: 1.8em;
 }
 
 button {
@@ -44,12 +40,12 @@ button {
 	font-size: 1em;
 	font-weight: 500;
 	font-family: inherit;
-	background-color: $button-background-dark;
+	background-color: #1a1a1a;
 	cursor: pointer;
 	transition: border-color 0.25s;
 
 	&:hover {
-		border-color: $button-border-color;
+		border-color: #646cff;
 	}
 
 	&:focus,
@@ -58,6 +54,11 @@ button {
 	}
 
 	@media (prefers-color-scheme: light) {
-		background-color: $button-background-light;
+		background-color: #f9f9f9;
 	}
+}
+
+.vercel {
+	height: 24px;
+	width: 100px;
 }
