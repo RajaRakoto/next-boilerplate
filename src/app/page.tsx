@@ -5,7 +5,7 @@ import Link from "next/link";
 import vercelLogo from "~/images/vercel.svg";
 
 /* app */
-import StoreProvider from "@/app/storeProvider";
+import StoreProvider from "@/common/storeProvider";
 
 /* components */
 import Demo from "@/components/demo/Demo";
