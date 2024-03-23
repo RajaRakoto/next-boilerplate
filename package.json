@@ -30,9 +30,8 @@
 		"next": ">=14.1.3"
 	},
 	"scripts": {
-		"start": "next start",
+		"preview": "next start",
 		"clean": "rimraf .next playwright-report",
-		"nvm": "nvm use",
 		"dev": "next dev --turbo",
 		"build": "bun run clean && next build",
 		"postbuild": "next-sitemap --config next-sitemap.config.js",
@@ -49,6 +48,7 @@
 		"npm-version:major": "npm version major",
 		"npm-version:minor": "npm version minor",
 		"npm-version:patch": "npm version patch",
+		"nvm": "nvm use",
 		"script:sass-charset": "cd scripts && bun sass-charset.js"
 	},
 	"dependencies": {
