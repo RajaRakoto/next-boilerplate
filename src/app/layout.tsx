@@ -1,22 +1,22 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-
-/* types */
-import { T_FunctionComponent } from "@/@types";
+import { Quicksand } from "next/font/google";
 
 /* styles */
 import "@/styles/tailwind.scss";
 import "@/styles/index.scss";
 
+/* types */
+import { T_FunctionComponent } from "@/@types";
+
 // =======================================
 
-const inter = Inter({ subsets: ["latin"] });
+const quicksand = Quicksand({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
 	title: "Next Boilerplate 🚀",
 	description:
 		"Minimalistic boilerplate to quick-start Next.js development in TypeScript, optimized for blazing-fast performance Bun & Turbopack 🚀",
-	keywords: "next, turbopack, typescript, bun",
+	keywords: "typescript, turbopack, next, bun",
 	authors: [{ name: "Raja Rakotonirina", url: "" }],
 };
 
@@ -27,7 +27,7 @@ export default function RootLayout({
 }>): T_FunctionComponent {
 	return (
 		<html lang="en">
-			<body className={inter.className}>{children}</body>
+			<body className={quicksand.className}>{children}</body>
 		</html>
 	);
 }
