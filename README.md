@@ -96,7 +96,7 @@ bun run pkg-upgrade # to upgrade outdated dependencies in interactive mode
 
 **NVM**
 
-- 📜 `nvm - Manage multiple node.js versions. Easily switch between node versions per project to ensure compatibility.
+- 📜 `nvm` - Manage multiple node.js versions. Easily switch between node versions per project to ensure compatibility.
 
 **Scripts**
 
