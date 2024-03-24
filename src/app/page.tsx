@@ -4,7 +4,7 @@ import Link from "next/link";
 /* assets */
 import { vercelLogo } from "@/constants";
 
-/* app */
+/* common */
 import StoreProvider from "@/common/storeProvider";
 
 /* components */
