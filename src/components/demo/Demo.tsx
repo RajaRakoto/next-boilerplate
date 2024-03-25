@@ -5,7 +5,7 @@ import Link from "next/link";
 import { useState, useEffect } from "react";
 
 /* assets */
-import { turbopackLogo, nextLogo, bunLogo } from "@/constants";
+import { TURBOPACKLOGO, NEXTLOGO, BUNLOGO } from "@/constants";
 
 /* store - redux */
 import { useStoreDispatch, useStoreSelector } from "@/hooks/redux";
@@ -77,7 +77,7 @@ export default function Demo(): T_FunctionComponent {
 				>
 					<Image
 						className="logo turbopack"
-						src={turbopackLogo}
+						src={TURBOPACKLOGO}
 						alt="Turbopack Logo"
 						width={200}
 						height={200}
@@ -91,7 +91,7 @@ export default function Demo(): T_FunctionComponent {
 				>
 					<Image
 						className="logo next dark:invert"
-						src={nextLogo}
+						src={NEXTLOGO}
 						alt="Next.js Logo"
 						width={200}
 						height={200}
@@ -101,7 +101,7 @@ export default function Demo(): T_FunctionComponent {
 				<Link href="https://bun.sh/" target="_blank" rel="noopener noreferrer">
 					<Image
 						className="logo bun"
-						src={bunLogo}
+						src={BUNLOGO}
 						alt="Bun.js Logo"
 						width={200}
 						height={200}

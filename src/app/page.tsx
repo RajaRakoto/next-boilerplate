@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 /* assets */
-import { vercelLogo } from "@/constants";
+import { VERCELLOGO } from "@/constants";
 
 /* common */
 import StoreProvider from "@/common/storeProvider";
@@ -33,7 +33,7 @@ export default function Home(): T_FunctionComponent {
 						By{" "}
 						<Image
 							className="vercel dark:invert"
-							src={vercelLogo}
+							src={VERCELLOGO}
 							alt="Vercel Logo"
 							width={20}
 							height={100}
