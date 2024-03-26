@@ -8,7 +8,7 @@
 		"moduleResolution": "bundler",
 		"moduleDetection": "force",
 		"rootDir": ".",
-		"outDir": ".next",
+		"outDir": "./.next",
 		"useDefineForClassFields": true,
 		"allowImportingTsExtensions": true,
 		"allowSyntheticDefaultImports": true,
@@ -45,5 +45,5 @@
 		}
 	},
 	"include": ["*.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
-	"exclude": ["node_modules"]
+	"exclude": ["./node_modules"]
 }
