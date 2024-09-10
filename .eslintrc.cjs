@@ -1,23 +1,23 @@
 module.exports = {
-  root: true,
-  env: {
-    browser: true,
-    es6: true,
-    node: true,
-  },
-  globals: {
-    React: 'readonly',
-  },
-  extends: [
-    'eslint:recommended',
-    'plugin:@typescript-eslint/recommended',
-    "plugin:react-hooks/recommended",
-    'plugin:jest/recommended',
-    'next/core-web-vitals',
-    'next',
-    'prettier',
-  ],
-  parser: '@typescript-eslint/parser',
+	root: true,
+	env: {
+		browser: true,
+		es6: true,
+		node: true,
+	},
+	globals: {
+		React: "readonly",
+	},
+	extends: [
+		"eslint:recommended",
+		"plugin:@typescript-eslint/recommended",
+		"plugin:react-hooks/recommended",
+		"plugin:jest/recommended",
+		"next/core-web-vitals",
+		"next",
+		"prettier",
+	],
+	parser: "@typescript-eslint/parser",
 	parserOptions: {
 		tsconfigRootDir: __dirname,
 		project: ["./tsconfig.json"],
@@ -27,8 +27,8 @@ module.exports = {
 			jsx: true,
 		},
 	},
-  plugins: ['@typescript-eslint', 'jest', "react-refresh"],
-  rules: {
+	plugins: ["@typescript-eslint", "jest", "react-refresh"],
+	rules: {
 		"@typescript-eslint/no-explicit-any": "off",
 		"@typescript-eslint/explicit-module-boundary-types": "off",
 		"@typescript-eslint/no-inferrable-types": "off",
@@ -45,9 +45,9 @@ module.exports = {
 		"@typescript-eslint/no-unused-vars": ["warn"],
 		"@typescript-eslint/consistent-type-imports": "warn",
 		"@typescript-eslint/no-unnecessary-condition": "warn",
-    "react-refresh/only-export-components": [
+		"react-refresh/only-export-components": [
 			"warn",
 			{ allowConstantExport: true },
 		],
-  },
+	},
 };

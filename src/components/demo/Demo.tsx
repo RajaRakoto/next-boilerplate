@@ -22,7 +22,7 @@ import useZustandStore from "@/stores/zustand/store";
 import "@/components/demo/Demo.scss";
 
 /* types */
-import { T_FunctionComponent } from "@/@types";
+import type { T_FunctionComponent } from "@/@types";
 
 // =======================================
 

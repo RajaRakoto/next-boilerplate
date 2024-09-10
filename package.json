@@ -5,9 +5,7 @@
 	"author": "Raja Rakotonirina <raja.rakoto7@gmail.com>",
 	"license": "MIT",
 	"type": "module",
-	"files": [
-		".next"
-	],
+	"files": [".next"],
 	"private": true,
 	"repository": {
 		"type": "git",

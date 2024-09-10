@@ -11,7 +11,7 @@ import StoreProvider from "@/common/storeProvider";
 import Demo from "@/components/demo/Demo";
 
 /* types */
-import { T_FunctionComponent } from "@/@types";
+import type { T_FunctionComponent } from "@/@types";
 
 // =======================================
 

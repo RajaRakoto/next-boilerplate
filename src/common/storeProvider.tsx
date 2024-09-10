@@ -7,7 +7,7 @@ import { Provider } from "react-redux";
 import store from "@/stores/redux/store.ts";
 
 /* types */
-import { T_FunctionComponent } from "@/@types";
+import type { T_FunctionComponent } from "@/@types";
 
 // =======================================
 

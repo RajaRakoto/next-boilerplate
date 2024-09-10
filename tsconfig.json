@@ -44,7 +44,18 @@
 			"~/*": ["./public/*"]
 		}
 	},
-  "files": ["./.eslintrc.cjs"],
-	"include": ["src", "e2e", "tests", "scripts", "./*.cjs", "./*.mjs", "./*.mts", "./*.js", "./*.ts", ".next/types/**/*.ts"],
+	"files": ["./.eslintrc.cjs"],
+	"include": [
+		"src",
+		"e2e",
+		"tests",
+		"scripts",
+		"./*.cjs",
+		"./*.mjs",
+		"./*.mts",
+		"./*.js",
+		"./*.ts",
+		".next/types/**/*.ts"
+	],
 	"exclude": ["./node_modules"]
 }
