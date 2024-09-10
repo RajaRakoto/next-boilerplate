@@ -79,8 +79,8 @@ export default function Demo(): T_FunctionComponent {
 						className="logo turbopack"
 						src={TURBOPACKLOGO}
 						alt="Turbopack Logo"
-						width={200}
-						height={200}
+						width={164}
+						height={164}
 						priority
 					/>
 				</Link>
@@ -93,8 +93,8 @@ export default function Demo(): T_FunctionComponent {
 						className="logo next dark:invert"
 						src={NEXTLOGO}
 						alt="Next.js Logo"
-						width={200}
-						height={200}
+						width={164}
+						height={164}
 						priority
 					/>
 				</Link>
@@ -103,8 +103,8 @@ export default function Demo(): T_FunctionComponent {
 						className="logo bun"
 						src={BUNLOGO}
 						alt="Bun.js Logo"
-						width={200}
-						height={200}
+						width={164}
+						height={164}
 						priority
 					/>
 				</Link>
