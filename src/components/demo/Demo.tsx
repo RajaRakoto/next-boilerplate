@@ -58,7 +58,7 @@ export default function Demo(): T_FunctionComponent {
 	useEffect(() => {
 		console.log("[useEffect] -> zustand");
 		console.log(useZustandStore.getState());
-	}, [count_zustand, user_zustand]);
+	}, []);
 
 	const handleUserZustand = (id: string): void => {
 		const users = user_zustand;
@@ -69,7 +69,7 @@ export default function Demo(): T_FunctionComponent {
 
 	return (
 		<div id="demo">
-			<div className="flex flex-row flex-wrap gap-5 justify-center items-center">
+			<div className="flex flex-row flex-wrap items-center justify-center gap-5">
 				<Link
 					href="https://turbo.build/pack"
 					target="_blank"
@@ -113,25 +113,41 @@ export default function Demo(): T_FunctionComponent {
 			<div className="cards">
 				<div className="card">
 					<h3>useState</h3>
-					<button onClick={() => setCount((count) => count + 1)}>
+					<button type="button" onClick={() => setCount((count) => count + 1)}>
 						count is {count}
 					</button>
 				</div>
 				<div className="card">
 					<h3>Redux</h3>
 					<p>count is {REDUX_STORE.count_redux}</p>
-					<button onClick={() => REDUX(increment__redux())}>increment</button>
-					<button onClick={() => REDUX(decrement__redux())}>decrement</button>
-					<button onClick={() => REDUX(reset__redux())}>reset</button>
-					<button onClick={() => handleUserRedux("user")}>get user</button>
+					<button type="button" onClick={() => REDUX(increment__redux())}>
+						increment
+					</button>
+					<button type="button" onClick={() => REDUX(decrement__redux())}>
+						decrement
+					</button>
+					<button type="button" onClick={() => REDUX(reset__redux())}>
+						reset
+					</button>
+					<button type="button" onClick={() => handleUserRedux("user")}>
+						get user
+					</button>
 				</div>
 				<div className="card">
 					<h3>Zustand</h3>
 					<p>count is {count_zustand}</p>
-					<button onClick={() => increment__zustand()}>increment</button>
-					<button onClick={() => decrement__zustand()}>decrement</button>
-					<button onClick={() => reset__zustand()}>reset</button>
-					<button onClick={() => handleUserZustand("admin")}>get admin</button>
+					<button type="button" onClick={() => increment__zustand()}>
+						increment
+					</button>
+					<button type="button" onClick={() => decrement__zustand()}>
+						decrement
+					</button>
+					<button type="button" onClick={() => reset__zustand()}>
+						reset
+					</button>
+					<button type="button" onClick={() => handleUserZustand("admin")}>
+						get admin
+					</button>
 				</div>
 			</div>
 			<p>

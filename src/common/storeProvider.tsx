@@ -1,5 +1,7 @@
 "use client";
 
+import type React from "react";
+
 /* libs */
 import { Provider } from "react-redux";
 
