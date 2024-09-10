@@ -10,9 +10,6 @@ lerna-debug.log*
 # production
 build
 dist
-dist-ssr
-.next
-out
 
 # dependencies
 .pnp
@@ -50,6 +47,7 @@ lib-cov
 .lock-wscript
 
 # editor
+.vscode
 .idea
 .DS_Store
 *.suo
@@ -71,9 +69,6 @@ typings
 .rts2_cache_es/
 .rts2_cache_umd/
 .node_repl_history
-.mf
-.rollup.cache
-tsconfig.tsbuildinfo
 
 # dotenv environment variables file
 .env
@@ -94,10 +89,22 @@ tsconfig.tsbuildinfo
 # ternjs
 .tern-port
 
-# vercel
-.vercel
+# docker
+.dockerignore
+docker-compose.yaml
+Dockerfile
 
 # own
+.git
+.gitignore
+.eslintignore
+.eslintrc
+.prettierignore
+.prettierrc
+LICENSE
+README.md
+gruntfile.cjs
+config
 playwright-report
 backups
 tmp

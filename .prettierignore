@@ -2,10 +2,10 @@
 build
 dist
 dist-ssr
-
-# production - next
 .next
 out
+tsconfig.tsbuildinfo
+tsdoc-metadata.json
 
 # dependencies
 .pnp
@@ -14,5 +14,19 @@ out
 node_modules
 bower_components
 jspm_packages
+*.local
+
+# cache
+.rollup.cache
+.cache
+
+# editor
+.vscode
+
+# netlify
+.netlify
 
 # own
+package.json
+backups
+tmp
