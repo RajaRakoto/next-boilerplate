@@ -1,4 +1,5 @@
-import type { Metadata } from "next";
+import type React from "react";
+
 import { Quicksand } from "next/font/google";
 
 /* styles */
@@ -8,17 +9,14 @@ import "@/styles/index.scss";
 /* types */
 import type { T_FunctionComponent } from "@/@types";
 
+/* metadata */
+import { metadata } from "@/metadata";
+
 // =======================================
 
 const quicksand = Quicksand({ subsets: ["latin"] });
-
-export const metadata: Metadata = {
-	title: "Next Boilerplate 🚀",
-	description:
-		"Minimalistic boilerplate to quick-start Next.js development in TypeScript, optimized for blazing-fast performance Bun & Turbopack 🚀",
-	keywords: "typescript, turbopack, next, bun",
-	authors: [{ name: "Raja Rakotonirina", url: "" }],
-};
+// eslint-disable-next-line react-refresh/only-export-components
+export { metadata };
 
 export default function RootLayout({
 	children,
